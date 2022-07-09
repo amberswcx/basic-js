@@ -1,5 +1,4 @@
-const {NotImplementedError} = require('../extensions/index.js');
-const {assert} = require('chai');
+const { NotImplementedError } = require('../extensions/index.js');
 
 /**
  * Given an array with heights, sort them except if the value is -1.
@@ -12,30 +11,9 @@ const {assert} = require('chai');
  *
  * The result should be [-1, 150, 160, 170, -1, -1, 180, 190]
  */
-function sortByHeight(arr) {
-  //Given an array with heights, sort them except if the value is -1.
-  for (let i = 0; i < arr.length; i++) {
-    let flag = 0;
-    for (let j = 0; j < arr.length - i; j++) {
-
-      if (arr[j] === -1) continue; // skip
-
-      let k = j + 1;
-
-      if (arr[k] === -1) {
-        while (arr[k] === -1) k++; // find next pair
-      }
-
-      if (arr[j] > arr[k]) {
-        [arr[j], arr[k]] = [arr[k], arr[j]];
-        flag = 1;
-      }
-    }
-    if (flag === 0) break;
-  }
-
-  return arr;
-
+function sortByHeight(/* arr */) {
+  throw new NotImplementedError('Not implemented');
+  // remove line with error and write your code here
 }
 
 module.exports = {

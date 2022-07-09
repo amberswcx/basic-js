@@ -1,5 +1,4 @@
-const {NotImplementedError} = require('../extensions/index.js');
-const {assert} = require('chai');
+const { NotImplementedError } = require('../extensions/index.js');
 
 const MODERN_ACTIVITY = 15;
 const HALF_LIFE_PERIOD = 5730;
@@ -13,7 +12,7 @@ const HALF_LIFE_PERIOD = 5730;
  * in case of incorrect sampleActivity
  *
  * @example
- *
+ * 
  * dateSample('1') => 22387
  * dateSample('WOOT!') => false
  *
